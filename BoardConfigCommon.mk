@@ -66,7 +66,8 @@ TARGET_NO_BOOTLOADER := true
 # Camera - HIDL overrideFormat
 TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT = true
 
-# Camera Malloc
+# Camera Jemalloc
+MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Disable sparse
