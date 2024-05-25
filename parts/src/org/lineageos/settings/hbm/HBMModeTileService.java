@@ -51,6 +51,13 @@ public class HBMModeTileService extends TileService {
         super.onStopListening();
     }
 
+    public static String getBACKLIGHT() {
+        if (FileUtils.isFileWritable(BACKLIGHT)) {
+            return BACKLIGHT;
+        }
+        return null;
+    }
+
     @Override
     public void onClick() {
         super.onClick();
